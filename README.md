@@ -1,3 +1,3 @@
-# terapia_mais
+# Terapia+
 
-A new Flutter project.
+Um TCC baseado em um IFood de terapia
