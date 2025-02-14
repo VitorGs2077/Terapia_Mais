@@ -24,7 +24,7 @@ class HomePageWidget extends StatelessWidget {
           title: Text('Terapia+'),
         ),
         drawer: Container(
-           width: 250,
+           width: 300,
            color: Colors.lightBlue.shade100,
            child: ListView(
             children: [
