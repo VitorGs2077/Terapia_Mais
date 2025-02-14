@@ -1,10 +1,12 @@
+
 import 'package:flutter/material.dart';
+import 'package:terapia_mais/widget_scaffold.dart';
 
 void main() {
-  runApp(MainApp());
+  runApp(MyApp());
 }
 
-class MainApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -19,30 +21,7 @@ class HomePageWidget extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Terapia+",
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Terapia+'),
-        ),
-        drawer: Container(
-           width: 300,
-           color: Colors.lightBlue.shade100,
-           child: ListView(
-            children: [
-              Center(
-                child: Text(
-                  "Teste de menu",
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontFamily: "Verdana",
-                  ),
-                  )
-              )
-            ],
-           )
-        ),
-        body: Center(
-        ),
-      ),
+      home: mainScaffold(),
     );
   }
 }
